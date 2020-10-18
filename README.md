@@ -58,3 +58,10 @@ Change Keras backend from Theano to TensorFlow.
 ## Author
 
 [Hironsan](https://github.com/Hironsan)
+
+
+## 联系我
+
+欢迎大家关注我的公众号【启舰杂谈】，回复【资源下载】即可获得计算机专业3000G的入门、进阶、实战的系列视频，直接送，没有任何套路。扫描下方二维码即可
+
+![](/resource_for_readme/pic2.jpg)
