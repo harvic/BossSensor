@@ -14,4 +14,9 @@ def show_image(image_path='s_pycharm.jpg'):
 
 
 if __name__ == '__main__':
-    show_image()
+	var_exists = screen in locals() or screen in globals()
+	if var_exists:
+		print('存在')
+	else:
+		show_image()
+    

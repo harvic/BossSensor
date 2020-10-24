@@ -22,6 +22,8 @@ if __name__ == '__main__':
         # 物体認識（顔認識）の実行
         facerect = cascade.detectMultiScale(frame_gray, scaleFactor=1.2, minNeighbors=3, minSize=(10, 10))
         #facerect = cascade.detectMultiScale(frame_gray, scaleFactor=1.01, minNeighbors=3, minSize=(3, 3))
+        print('Is monitoring')
+		
         if len(facerect) > 0:
             print('face detected')
             color = (255, 255, 255)  # 白
