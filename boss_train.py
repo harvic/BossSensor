@@ -3,7 +3,7 @@ from __future__ import print_function
 import random
 
 import numpy as np
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation, Flatten
@@ -102,7 +102,7 @@ class Model(object):
 
         self.model.summary()
 
-    def train(self, dataset, batch_size=32, nb_epoch=40, data_augmentation=True):
+    def train(self, dataset, batch_size=10, nb_epoch=40, data_augmentation=True):
         # let's train the model using SGD + momentum (how original).
         sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
         self.model.compile(loss='categorical_crossentropy',
